@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Трекер приёма лекарств</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <h1>Трекер приёма лекарств</h1>
+      <form id="addMedicineForm">
+         <input type="text" id="newMedicineName" placeholder="Название лекарства (до 10)">
+         <button type="submit">Добавить</button>
+      </form>
+      <div id="medicineList"></div>
+      <div class="nav">
+         <button id="prevMonth">← Назад</button>
+         <h2 id="calendarTitle"></h2>
+         <button id="nextMonth">Вперёд →</button>
+      </div>
+      <button id="clearMonth" class="danger">Очистить этот месяц</button>
+      <div class="calendar" id="calendar"></div>
+      <script src="script.js"></script>
+   </body>
+</html>
